@@ -31,6 +31,8 @@ myMakeLink backup/backup-hook.sh $home/backup-hook.sh
 
 for plugin in `ls plugins` 
 do
-  myMakeLink plugin/$plugin $mc/plugins/$plugin
+  myMakeLink plugins/$plugin $mc/plugins/$plugin
 done
 
+cd $home
+git clone https://github.com/spkelly/shabam.git
